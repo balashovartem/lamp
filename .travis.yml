@@ -14,7 +14,7 @@ before_deploy:
 deploy:
   provider: releases
   prerelease: true
-  api_key: "eaad08399eb9035c07087563145471b149d87c3f"
+  api_key: "ef567c2132e4d38826225b3259a18f7d373f2d40"
   skip_cleanup: true
   file: 
     - dist/lamp-0.1-py2.py3-none-any.whl
