@@ -13,3 +13,4 @@ deploy:
   file: dist/lamp-0.1-py2.py3-none-any.whl
   on:
     repo: balashovartem/lamp
+    tags: false
