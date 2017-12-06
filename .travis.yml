@@ -7,8 +7,8 @@ script:
   - python setup.py bdist_wheel
 deploy:
   provider: releases
-  user: "GITHUB_USERNAME"
-  password: "GITHUB_PASSWORD"
+  user: ${GITHUB_USERNAME}
+  password: ${GITHUB_PASSWORD}
   file: "dist/*.whl"
   skip_cleanup: true
 #  on:
