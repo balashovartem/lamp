@@ -7,10 +7,14 @@ install:
   - pip install .
 script:
   - python setup.py bdist_wheel
+before_deploy:
+  - git config --local user.name "balashovartem"
+  - git config --local user.email "balashov.artem@gmail.com"
+  - git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"  
 deploy:
   provider: releases
   prerelease: true
-  api_key: "cc5881443db42c1cac404f3460b408cae9f04c43"
+  api_key: "eaad08399eb9035c07087563145471b149d87c3f"
   skip_cleanup: true
   file: 
     - dist/lamp-0.1-py2.py3-none-any.whl
