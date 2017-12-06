@@ -1,16 +1,10 @@
 language: python
-env:
-- text=asd
 python:
 - '3.6'
 install:
 - pip install .
 script:
 - python setup.py bdist_wheel
-before_deploy:
-- git config --local user.name "balashovartem"
-- git config --local user.email "balashov.artem@gmail.com"
-- git tag "$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)"
 deploy:
   provider: releases
   api_key:
