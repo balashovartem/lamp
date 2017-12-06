@@ -9,6 +9,7 @@ deploy:
   provider: releases
   api_key:
     secure: fEFHBrpCTZPOGEMOs/MU3Ahn3IDDCA7vBjCmsVlBl49HU/KcLfid1YT8dtJ/c4E3Kjvnr5kS+DCELvf+5ks7kVTXYlaG74l3WtuGT3HLw/6GwsPMWTVlKF7UyaQaGG/LLisW9jXUsQRD2RlbokY/GR2LwTOXzsMWo/8sUduaB1N0cljcf0cccZyQGLEIDDCdSszjoEu/q85OF5UhpeqtYinKcEiEQooauv1FgCJWI/3GM3EZQlEj7IT9EEyCPOXIUogd9YVCrxvb1JX5ugC/7Uo0BA7k7va3X1py2FqB2Ezr+MWa2wu1JD+6pGtYWEMOeVDrDUmtCsW0DlcMD4RjaVAkjBkihCXQytllvOP3N+/Gn8+lpjxCBzfLxuscjQDfpysubFyF6+32VBheNDSqQe2dU0UCgvA/jr/KDZRmPP4aT9bbL8oTKWHngKK2pq2MhhOb7AZwEJhLm3gOcUiDrAO0uLnBG/PHAFiLbu/Wwd38uJ64Q3KXHzOS7X4GPuVPe0IAD3ihDOVmNHVe8jPXTKFvKvtdbp7IQy0D2/8eqtOL1fASwqTMaeJKX5kkSi72oI+SZVCMuXJOwpfX0NUuShvucYVcSmPIn5bF+RTdWo9JIrosshLl6mTnivzM5OvUVws7qSMf67bpeIIyMDESUvD/gGDXgYnwsl/KAElmRUc=
+  skip_cleanup: true
   file: dist/lamp-0.1-py2.py3-none-any.whl
   on:
     repo: balashovartem/lamp
