@@ -9,10 +9,11 @@ script:
   - python setup.py bdist_wheel
 deploy:
   provider: releases
+  prerelease: true
   api_key: "3b81ec17888eae092a5827f24b74a9cf83e06400"
-  user: "balashovartem"
-  password: "a123456"
-  file: "dist/*.whl"
   skip_cleanup: true
+  file: 
+    - dist/lamp-0.1-py2.py3-none-any.whl
+  
 #  on:
 #    tags: true
