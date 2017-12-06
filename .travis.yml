@@ -9,8 +9,7 @@ script:
   - python setup.py bdist_wheel
 deploy:
   provider: releases
-  user: "balashovartem"
-  password: "a123456"
+  api_key: "3b81ec17888eae092a5827f24b74a9cf83e06400"
   file: "dist/*.whl"
   skip_cleanup: true
 #  on:
