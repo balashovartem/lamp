@@ -6,12 +6,12 @@ install:
 script:
   - python setup.py bdist_wheel
 before_deploy:
-  - git config --local user.name ${GITHUB_USERNAME}
-  - git config --local user.email ${GITHUB_PASSWORD}  
+  - git config --local user.name $GITHUB_USERNAME
+  - git config --local user.email $GITHUB_PASSWORD
 deploy:
   provider: releases
-  user: ${GITHUB_USERNAME}
-  password: ${GITHUB_PASSWORD}
+  user: $GITHUB_USERNAME
+  password: $GITHUB_PASSWORD
   file: "dist/*.whl"
   skip_cleanup: true
 #  on:
