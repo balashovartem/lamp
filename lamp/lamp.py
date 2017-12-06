@@ -4,14 +4,15 @@ import re
 import asyncio
 import threading
 import struct
+import os
 
 from functools import partial
 from PIL import Image, ImageTk
 
 class LampWidget( tkinter.Frame ):
     def __init__( self, parent ):
-        self.photo_lamp_enable = ImageTk.PhotoImage( Image.open( "lamp_enable.png" ) )
-        self.photo_lamp_disable = ImageTk.PhotoImage( Image.open( "lamp_disable.png" ) )
+        self.photo_lamp_enable = ImageTk.PhotoImage( Image.open( os.path.join( os.path.dirname(__file__), "lamp_enable.png" ) ) )
+        self.photo_lamp_disable = ImageTk.PhotoImage( Image.open( os.path.join( os.path.dirname(__file__), "lamp_disable.png" ) ) )
 
         tkinter.Frame.__init__( self, parent )
 
@@ -103,7 +104,7 @@ def perfect_tcp_host_port(string):
     return ip_address, port
 
 
-if __name__ == "__main__":
+def main():
     parser = argparse.ArgumentParser()
     parser.add_argument( "--uri", type=perfect_tcp_host_port, default="127.0.0.1:9999", required=False,
                          help="ip-адрес:порт для подключения к серверу фонаря")
@@ -112,4 +113,6 @@ if __name__ == "__main__":
     lamp_application = LampApplication( root, args.uri[0], args.uri[1] )
     lamp_application.pack()
     root.mainloop()
-     
+
+if __name__ == "__main__":
+     main()

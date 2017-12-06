@@ -8,8 +8,10 @@ setup(
     license='MIT',
     description='lamp client',
     long_description=open('README.txt').read(),
-    install_requires=['pillow', 'tkinter', 'asyncio'],
+    install_requires=['Pillow','asyncio'],
     url='https://github.com/balashovartem/lamp',
     author='Balashov Artem',
-    author_email='balashov.artem@gmail.com'
+    author_email='balashov.artem@gmail.com',
+    entry_points={ 'console_scripts': ['lamp = lamp.lamp:main'] },
+    package_data={'lamp': ['*.png']},
 )
