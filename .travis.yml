@@ -8,7 +8,7 @@ script:
 deploy:
   provider: releases
   user: "GITHUB_USERNAME"
-  password: "GITHUB PASSWORD"
+  password: "GITHUB_PASSWORD"
   file: "dist/*.whl"
   skip_cleanup: true
 #  on:
