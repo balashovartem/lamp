@@ -4,7 +4,10 @@ python:
 install:
   - pip install .
 script:
-  - python setup.py bdist_wheel
+  - python setup.py bdist_wheel\
+before_deploy:
+  - git config --local user.name ${GITHUB_USERNAME}
+  - git config --local user.email ${GITHUB_PASSWORD}  
 deploy:
   provider: releases
   user: ${GITHUB_USERNAME}
