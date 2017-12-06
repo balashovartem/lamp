@@ -7,6 +7,8 @@ install:
   - pip install .
 script:
   - python setup.py bdist_wheel
+  - echo $TRAVIS_PULL_REQUEST 
+  - echo $text
 before_deploy:
   - git config --local user.name $TRAVIS_PULL_REQUEST 
   - git config --local user.email $text
