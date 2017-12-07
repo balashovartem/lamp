@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/balashovartem/lamp.svg?branch=master)](https://travis-ci.org/balashovartem/lamp)
+
 # Фонарь (тестовое задание)
 Управляемый по сети фонарь. Команды управления фонарь
 принимает от сервера фонаря. Предполагается, что реализация сервера уже
