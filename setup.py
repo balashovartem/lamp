@@ -7,7 +7,7 @@ setup(
     packages=find_packages(),
     license='MIT',
     description='lamp client',
-    long_description=open('README.txt').read(),
+    long_description=open('README.md').read(),
     install_requires=['Pillow', 'asyncio'],
     url='https://github.com/balashovartem/lamp',
     author='Balashov Artem',
