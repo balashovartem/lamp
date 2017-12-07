@@ -11,7 +11,7 @@ from PIL import Image, ImageTk
 
 
 class LampWidget(tkinter.Frame):
-    """Виджет фонаря, отображающий ссстояние и цвет фонаря"""
+    """Виджет фонаря, отображающий состояние и цвет фонаря"""
     def __init__(self, parent):
         self.photo_lamp_enable = ImageTk.PhotoImage(Image.open(os.path.join(os.path.dirname(__file__),
                                                                             "lamp_enable.png")))
